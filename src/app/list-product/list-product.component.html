@@ -1,0 +1,5 @@
+<h1>Parent : Component</h1>
+<h2>Msg child: {{msg}}</h2>
+<app-product [product]="p" *ngFor="let p of list"
+ [messageParent]="message"  (messageFils)="showMsg($event)" (likeAdd)="likeAdder(p)">
+</app-product>
